@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height">
+    <ImageView
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_alignParentLeft="true"
+        android:id ="@+id/showing"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/showing"
+        android:id="@+id/EnglishItem"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:textColor="#FFFFFF"
+        android:gravity="bottom"
+        tools:text="check"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/showing"
+        android:layout_below="@id/EnglishItem"
+        android:id="@+id/MiwokItem"
+        android:textSize="20sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="2dp"
+        tools:text="check"
+        android:gravity="center_vertical"
+        android:textColor="#FFFFFF"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:background="?android:selectableItemBackground"/>
+
+
+
+</RelativeLayout>
